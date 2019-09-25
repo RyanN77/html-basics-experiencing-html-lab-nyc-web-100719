@@ -1,20 +1,43 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lists</title>
+    <link rel="stylesheet" href="blackjack.css">
+    <title>Blackjack</title>
 </head>
-  <body>
-    <h1>My Music List</h1>
-  <p>Some of my favorite post-punk and Goth songs!</p>
-  <ul>
-    <li>"Love Will Tear Us Apart"</li>
-    <li>"Bela Lugosi's Dead"</li>
-    <li>"A Forest"</li>
-    <li>"Nine While Nine"</li>
-    <li>"Girlfriend In a Coma"</li>
-  </ul>
-  </body>
+<body>
+    <div>
+        <h1 id="header">Blackjack</h1>
+    </div>
+
+    <div id="main">
+        <span id="span1"><button class="chips" id="chip1"><h3 class="chip_text">$1</h3></button>
+            <button id="take_card"><img id="card_deck" src="cardcover.png" style="width:100%;height:100%;"></button>
+            </span>
+        <br>
+        <button class="chips" id="chip2"><h3 class="chip_text">$5</h3></button>
+        <br>
+        <button class="chips" id="chip3"><h3 class="chip_text">$10</h3></button>
+        <br>
+        <button class="chips" id="chip4"><h3 class="chip_text">$25</h3></button>
+        <br>
+        <button class="chips" id="chip5"><h3 class="chip_text">$100</h3></button>
+        <br>
+    </div>
+
+    <div id="begin">
+    <button id="begin_game">Start Game</button>
+    <button id="reset_bet">Reset Bet</button>
+    </div>
+
+    <div class="money">
+        <h3 id="cash">Cash: 500</h3>
+        <h3 id="bet">Bet: 0</h3>
+    </div>
+    
+
+    <script src="blackjack.js"></script>
+</body>
 </html>
